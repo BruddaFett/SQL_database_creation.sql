@@ -92,19 +92,19 @@ CREATE TABLE IF NOT EXISTS Orders
 
 INSERT INTO distribution
 VALUES
-(DEFAULT,	'Southern Wine & Spirits',	'4142 1st Ave S',	'Seattle',	'WA',	'98134',	'(206) 442-5460'),
-(DEFAULT,   'Young`s Market Co',    	'2501 E Valley Rd',	'Renton',	'WA',	'98057',	'(206) 808-6200'),
-(DEFAULT,	'K & L Distributors',		'3215 Lind Ave SW',	'Renton',	'WA',	'98057',	'(206) 808-6000'),
-(DEFAULT,	'Beam Suntory',				'2511 152nd Ave NE','Redmond',	'WA',	'98052',	'(425) 883-4075'),
-(DEFAULT,	'Columbia Distributing',	'20301 59th S', 	'Kent',		'WA',	'98032',	'(425) 251-9300');
+(DEFAULT,	  'Southern Wine & Spirits',	'4142 1st Ave S',	   'Seattle',	'WA',	'98134',	'(206) 442-5460'),
+(DEFAULT,        'Young`s Market Co', '2501 E Valley Rd',	    'Renton',	'WA',	'98057',	'(206) 808-6200'),
+(DEFAULT,	      'K & L Distributors',	'3215 Lind Ave SW',	    'Renton',	'WA',	'98057',	'(206) 808-6000'),
+(DEFAULT,	            'Beam Suntory','2511 152nd Ave NE',    'Redmond',	'WA',	'98052',	'(425) 883-4075'),
+(DEFAULT,	   'Columbia Distributing',	    '20301 59th S', 	    'Kent',	'WA',	'98032',	'(425) 251-9300');
 
 INSERT INTO alcohol 
 VALUES
-(DEFAULT,   'Aristocrat',      			'gin',          '1000 ml.', 12),
-(DEFAULT,   'Aristocrat',       		'rum', 			'1000 ml.', 12), 
-(DEFAULT,   'Aristocrat',       		'vodka', 		'1000 ml.', 12),
-(DEFAULT,   'Aristocrat',       		'whiskey', 		'1000 ml.', 12),
-(DEFAULT,	'Belvino',	        		'Pinot Grigio', '750 ml.',   8),
+(DEFAULT,     'Aristocrat',      			'gin',          '1000 ml.', 12),
+(DEFAULT,     'Aristocrat',       		'rum', 			'1000 ml.', 12), 
+(DEFAULT,     'Aristocrat',       		'vodka', 		'1000 ml.', 12),
+(DEFAULT,     'Aristocrat',       		'whiskey', 		'1000 ml.', 12),
+(DEFAULT,     	 'Belvino',	      'Pinot Grigio', '750 ml.',   8),
 (DEFAULT,	'Bombay Sapphire',			'gin',			'750 ml.',	 1),
 (DEFAULT,	'Bombay Sapphire',			'gin',			'750 ml.',	12),
 (DEFAULT,	'Cavit',	        		'Pinot Grigio',	'750 ml.',	 8),
