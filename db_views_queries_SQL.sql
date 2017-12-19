@@ -1,10 +1,10 @@
 #ROYCE
-    #	VIEW 1 OF 3
-	#	FIND [Alcohol Brand] BY grouped DIST	
+   	#VIEW 1 OF 3
+	#FIND [Alcohol Brand] BY grouped DIST	
 CREATE OR REPLACE VIEW ALC_Distributor_with_Brand
 AS 
 SELECT
-	DistId 				AS 'Distributor ID',
+	DistId 			AS 'Distributor ID',
 	distribution.name 	AS Distributor,
     alcohol.name		AS 'Alcohol Brand'
 FROM distribution
@@ -12,12 +12,12 @@ FROM distribution
    JOIN alcohol 	   USING (AlcoholId)
 GROUP BY DistId;
 
-	#	VIEW 2 OF 3
-    #	FIND [Glass Brand] BY grouped DIST
+#VIEW 2 OF 3
+#FIND [Glass Brand] BY grouped DIST
 CREATE OR REPLACE VIEW GLASS_Distributor_with_Brand
 AS 
 SELECT
-	DistId 				AS 'Distributor ID',
+	DistId 			AS 'Distributor ID',
 	distribution.name 	AS Distributor,
     glassware.brand		AS 'Glassware Brand'
 FROM distribution
@@ -30,7 +30,7 @@ GROUP BY DistId;
 CREATE OR REPLACE VIEW DryGood_Distributor_with_Brand
 AS 
 SELECT
-	DistId 				AS 'Distributor ID',
+	DistId 			AS 'Distributor ID',
 	distribution.name 	AS Distributor,
     drygoods.name		AS 'Dry Good Brand'
 FROM distribution
@@ -44,11 +44,11 @@ SELECT
 	name 			AS Name,
 	orderId			AS 'Order Number', 
 	date 			AS Date, 
-	ppu				AS PPU,
+	ppu			AS PPU,
     COUNT(casesize) AS 'Number of Case`s'
 FROM alcoholdetail
 	JOIN alcohol USING (alcoholid)
-    JOIN orders  USING (alcDetailsId)
+    	JOIN orders  USING (alcDetailsId)
 WHERE casesize > 1
 GROUP BY orderId;
 
